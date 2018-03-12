@@ -1,0 +1,78 @@
+.register {
+  background: #fff; }
+  .register .top {
+    width: 100%;
+    font-size: 0.18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0.44rem;
+    color: #666;
+    border-bottom: 0.01rem solid #aaa; }
+    .register .top img {
+      display: inline-block;
+      width: 0.25rem;
+      height: 0.25rem;
+      padding: 0.01rem; }
+    .register .top span {
+      flex: 1;
+      text-align: center; }
+
+.main {
+  font-size: 0.12rem;
+  margin: 0.28rem  0.12rem  0;
+  color: #999; }
+  .main p {
+    text-align: center; }
+  .main ul {
+    width: 3.51rem;
+    margin-bottom: 0.25rem; }
+    .main ul li {
+      display: flex;
+      align-items: center;
+      position: relative;
+      font-size: 0.14rem;
+      border-bottom: 1px solid #aaa; }
+      .main ul li input {
+        width: 3.51rem;
+        height: 0.48rem;
+        outline: none;
+        border: none; }
+      .main ul li b {
+        height: 0.48rem;
+        margin-top: 0.11rem;
+        position: absolute;
+        right: 0;
+        top: 0; }
+        .main ul li b img {
+          width: 0.25rem;
+          height: 0.25rem; }
+    .main ul li:nth-child(2) {
+      display: flex;
+      justify-content: space-between; }
+      .main ul li:nth-child(2) input {
+        width: 2.25rem; }
+      .main ul li:nth-child(2) b {
+        height: 0.48rem;
+        margin-top: 0.11rem;
+        position: absolute;
+        right: 1rem;
+        top: 0; }
+        .main ul li:nth-child(2) b img {
+          width: 0.25rem;
+          height: 0.25rem; }
+      .main ul li:nth-child(2) span {
+        width: 0.7rem;
+        height: 0.48rem;
+        line-height: 0.48rem; }
+  .main a {
+    display: block;
+    width: 100%;
+    height: 0.48rem;
+    line-height: 0.48rem;
+    text-align: center;
+    background: #dbdbdb;
+    font-size: 0.18rem;
+    color: #fff; }
+
+/*# sourceMappingURL=register.css.map */
