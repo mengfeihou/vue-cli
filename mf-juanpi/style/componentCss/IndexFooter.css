@@ -1,0 +1,26 @@
+footer {
+  width: 100%;
+  background: #fff; }
+  footer ul {
+    display: flex;
+    justify-content: space-around; }
+    footer ul li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 0.5rem;
+      width: 0.75rem; }
+      footer ul li a {
+        font-size: 0.12rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; }
+        footer ul li a span img {
+          width: 0.24rem;
+          height: 0.24rem; }
+        footer ul li a h3 {
+          color: #333;
+          font-weight: normal; }
+
+/*# sourceMappingURL=IndexFooter.css.map */

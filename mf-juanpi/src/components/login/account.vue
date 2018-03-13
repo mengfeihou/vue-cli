@@ -15,12 +15,6 @@ export default {
     return {
     }
   },
-  methods:{
-  	sub:function(){
-  		var username=this.$refs.username.value;
-  		console.log(username)
-  	}
-  }
 }
 </script>
 <style scoped>

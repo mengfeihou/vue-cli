@@ -1,0 +1,35 @@
+footer{
+    width:100%;
+    background:#fff;
+    ul{
+        
+        display:flex;
+        justify-content: space-around;
+        li{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:0.5rem;
+            width:0.75rem;
+            a{
+                font-size:0.12rem;
+                display: flex;
+                flex-direction:column;
+                justify-content:space-around;
+                align-items:center;
+                span{
+                    
+                    img{
+                        
+                        width:0.24rem;
+                        height:0.24rem;
+                    }
+                }
+                h3{
+                       color:#333;
+                      font-weight: normal;        
+                }
+            }
+        }
+    }
+}
