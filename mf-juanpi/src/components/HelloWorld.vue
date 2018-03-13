@@ -1,11 +1,11 @@
 <template>
   <div class="hello">
-			<h1>Hello world</h1>
+  	<Slideshow></Slideshow>
   </div>
 </template>
 
 <script>
-
+	import Slideshow from '@/components/slideshow'
 	
 export default {
   name: 'HelloWorld',
@@ -14,7 +14,9 @@ export default {
       msg: 'Welcome to Your Vue.js App'
     }
   },
-  
+  components:{
+	  	"Slideshow": Slideshow
+	  }
 }
 </script>
 

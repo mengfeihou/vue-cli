@@ -9,6 +9,9 @@
   			获取验证码
   		</span>
   	</div>
+  	<span id="ok">
+			<button type="button" >登录</button>
+		</span>
   </div>
 </template>
 
@@ -41,5 +44,18 @@ export default {
 		color: #999;
 		line-height: 0.44rem;
 		padding-left:.4rem ;
+	}
+	#ok{
+    padding: .1rem;
+    background: white;
+	}
+	button{
+	    font-size: .18rem;
+	    color: white;
+	    height: .48rem;
+	    background: #dbdbdb;
+	    border: 0 none;
+	    width: 100%;
+	    outline: none;
 	}
 </style>

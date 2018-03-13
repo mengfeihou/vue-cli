@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.post('/api/register',function(req,res){
+router.post('/myapi/register',function(req,res){
 	var username = req.body.username;
 	var psw = md5(req.body.psw);
 	

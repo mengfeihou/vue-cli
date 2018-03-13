@@ -24,9 +24,6 @@
 			  <!-- 组件在 vm.currentview 变化时改变！ -->
 			</component>
 		</keep-alive>
-		<div id="ok">
-			<button type="button">登录</button>
-		</div>
 	</div>
 </template>
 
@@ -43,6 +40,10 @@
 	  components:{
 	  	"Account": Account,
 		"Phone": Phone
+	  },
+	  methods:{
+	  	sub:function(){
+	  	}
 	  }
 	}
 </script>

@@ -13,6 +13,7 @@
         height:.25rem;
     }
     b{
+        text-align: center;
         color: white;
         flex: 1;
         font-size:.18rem;
@@ -28,25 +29,13 @@
 #method{
     display: flex;
     background: white;
+    justify-content: center;
     span{
         text-align: center;
         font-size: .14rem;
         line-height: .44rem;
         width:1.75rem;
         height: .44rem;
-    }
-}
-#ok{
-    padding: .1rem;
-    background: white;
-    button{
-        font-size: .18rem;
-        color: white;
-        height: .48rem;
-        background: #dbdbdb;
-        border: 0 none;
-        width: 100%;
-        outline: none;
     }
 }
 
