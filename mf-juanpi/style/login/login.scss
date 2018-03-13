@@ -1,0 +1,56 @@
+@charset "utf-8";
+#main{
+    font-size:.07rem;
+}
+#head{
+    background: linear-gradient(150deg,#ff5a61 50%,#fd631c);
+    display: flex;
+    height:.44rem;
+    justify-content: space-between;
+    line-height: .44rem;
+    img{
+        width:.25rem;
+        height:.25rem;
+    }
+    b{
+        color: white;
+        flex: 1;
+        font-size:.18rem;
+    }
+    a{
+        color: white;
+        font-size:.14rem;
+        display: flex;
+        align-items: center;
+        padding: 0rem 0.1rem;
+    }
+}
+#method{
+    display: flex;
+    background: white;
+    span{
+        text-align: center;
+        font-size: .14rem;
+        line-height: .44rem;
+        width:1.75rem;
+        height: .44rem;
+    }
+}
+#ok{
+    padding: .1rem;
+    background: white;
+    button{
+        font-size: .18rem;
+        color: white;
+        height: .48rem;
+        background: #dbdbdb;
+        border: 0 none;
+        width: 100%;
+        outline: none;
+    }
+}
+
+
+
+
+

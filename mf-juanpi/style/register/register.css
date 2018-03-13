@@ -62,7 +62,7 @@
           width: 0.25rem;
           height: 0.25rem; }
       .main ul li:nth-child(2) span {
-        width: 0.7rem;
+        width: auto;
         height: 0.48rem;
         line-height: 0.48rem; }
   .main a {

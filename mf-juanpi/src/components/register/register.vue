@@ -44,7 +44,7 @@ methods : {
 		var psw =  this.$refs.psw.value;
 		
 		if(res.test(username)){
-			axios.post('/api/register', {
+			axios.post('/myapi/register', {
 		    username:username,
 		    psw:psw
 		  })

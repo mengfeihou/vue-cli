@@ -3,7 +3,11 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 
 import Register from '@/components/register/register'
+
 import IndexFooter from '@/components/component/IndexFooter'
+
+
+import Login from '@/components/login/Login'
 
 
 Vue.use(Router)
@@ -25,6 +29,11 @@ export default new Router({
       path: '/IndexFooter',
       name: 'IndexFooter',
       component: IndexFooter
+	},
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
     }
   ]
 })
