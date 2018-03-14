@@ -15,14 +15,11 @@ export default {
     }
   },
   components:{
-  	"Choiceness": Choiceness
+  	Choiceness
   },
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.active{
-	color:red;
-}
+<style scoped lang="scss">
 </style>
