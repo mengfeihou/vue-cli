@@ -22,15 +22,16 @@ export default {
     }
   },
   components:{
+<<<<<<< HEAD
   	 Choiceness,
   	 Beauty
+=======
+  	Choiceness
+>>>>>>> 4fe9a3999949868719f630e8a8a48e3ac758f194
   },
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.active{
-	color:red;
-}
+<style scoped lang="scss">
 </style>
