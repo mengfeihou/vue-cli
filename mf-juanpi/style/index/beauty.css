@@ -1,0 +1,31 @@
+.beauty li {
+  display: flex;
+  flex-wrap: wrap; }
+  .beauty li div:nth-child(1) {
+    width: 100%; }
+    .beauty li div:nth-child(1) a img {
+      width: 100%;
+      height: 1.11rem; }
+  .beauty li div:nth-child(2) {
+    display: flex; }
+    .beauty li div:nth-child(2) a {
+      width: 100%; }
+      .beauty li div:nth-child(2) a img {
+        width: 100%;
+        height: 1.11rem; }
+  .beauty li div:nth-child(3) {
+    display: flex; }
+    .beauty li div:nth-child(3) a {
+      width: 100%; }
+      .beauty li div:nth-child(3) a img {
+        width: 100%;
+        height: 1.15rem; }
+.beauty li:nth-child(3n) div:nth-child(3) {
+  display: flex; }
+  .beauty li:nth-child(3n) div:nth-child(3) a {
+    width: 100%; }
+    .beauty li:nth-child(3n) div:nth-child(3) a img {
+      width: 1.25rem;
+      height: 1.15rem; }
+
+/*# sourceMappingURL=beauty.css.map */

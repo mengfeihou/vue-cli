@@ -1,0 +1,23 @@
+.brandtop {
+  display: flex;
+  width: 100%; }
+  .brandtop a {
+    width: 50%; }
+    .brandtop a img {
+      width: 100%;
+      height: 1.11rem; }
+
+.brand ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .brand ul li {
+    width: 25%; }
+    .brand ul li a {
+      width: 100%; }
+      .brand ul li a img {
+        height: 0.48rem;
+        width: 100%; }
+
+/*# sourceMappingURL=brand.css.map */
