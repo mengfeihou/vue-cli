@@ -24,7 +24,6 @@ export default {
   		this.imgArr=res.data.adsInfo.slide_ads.config.slide;
   		console.log(this.imgArr)
   	})
-  	
   },
   updated(){
   	var mySwiper = new Swiper('.swiper-container', {
