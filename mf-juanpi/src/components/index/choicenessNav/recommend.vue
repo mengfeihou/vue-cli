@@ -1,5 +1,5 @@
 <template>
-  <div id="main">
+  <div id="content">
   	<div class="goods" v-for="item in recommend_list">
   		<a :href="item.goods_jump_url">
   			<div class="imgs">
@@ -11,7 +11,7 @@
   			</div>
   		</a>
   	</div>
-  </div>
+ 	 </div>
 </template>
 
 <script>
@@ -39,27 +39,27 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-	#main{
+#content{
 		display: flex;
 		flex-wrap: wrap;
 		font-size: .07rem;
 		justify-content: space-between;
 	}
-	#main .goods{
+	#content .goods{
 		background: white;
 	}
-	#main a{
+	#content a{
 		color: #3b3b3b;
 	}
-	#main a .text{
+	#content a .text{
 		padding: 0 .08rem;
 	}
-	#main a i{
+	#content a i{
 		font-size: .14rem;
 		color: #ff464e;
 		height: .25rem;
 	}
-	#main a span{
+	#content a span{
 		margin-bottom: .12rem;
 	}
 	.imgs img{
