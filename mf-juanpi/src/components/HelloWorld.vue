@@ -1,18 +1,23 @@
 <template>
   <div class="hello">
-   	<router-link active-class= "active" to="/" exact>财经</router-link>
-   	<router-link active-class= "active" to="News">新闻</router-link>
-   	<router-view/>
+   	
+   	<!--<Search></Search>-->
   </div>
 </template>
 
 <script>
+//	import Search  from '@/components/index/search'
+
+	
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components : {
+//	Search,
   }
 }
 </script>
