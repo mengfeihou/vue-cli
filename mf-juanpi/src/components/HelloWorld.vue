@@ -22,12 +22,8 @@ export default {
     }
   },
   components:{
-<<<<<<< HEAD
   	 Choiceness,
-  	 Beauty
-=======
-  	Choiceness
->>>>>>> 4fe9a3999949868719f630e8a8a48e3ac758f194
+  	 Beauty,
   },
 }
 </script>
