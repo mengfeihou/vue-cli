@@ -4,17 +4,17 @@
    		<li>
    			<div>
 	   			<a href="#">
-	   				<img :src="list_one_aone" />
+	   				<img v-lazy="list_one_aone" />
 	   			</a>
 	   		</div>	
 	   		<div>
 	   			<a href="#" v-for="item in list_one_atwo">
-	   				<img :src="item.child[0].pic" />
+	   				<img v-lazy="item.child[0].pic" />
 	   			</a>
 	   		</div>	
 	   		<div>
 	   			<a href="#" v-for="item in list_one_athree">
-	   				<img :src="item.child[0].pic" />
+	   				<img v-lazy="item.child[0].pic" />
 	   			</a>
 	   		</div>	
    		</li>
@@ -22,17 +22,17 @@
    		<li>
    			<div>
 	   			<a href="#">
-	   				<img :src="list_two_aone" />
+	   				<img v-lazy="list_two_aone" />
 	   			</a>
 	   		</div>	
 	   		<div>	
 	   			<a href="#" v-for="item in list_two_atwo">
-	   				<img :src="item.child[0].pic" />
+	   				<img v-lazy="item.child[0].pic" />
 	   			</a>
 	   		</div>	
 	   		<div>	
 	   			<a href="#" v-for="item in list_two_athree">
-	   				<img :src="item.child[0].pic" />
+	   				<img v-lazy="item.child[0].pic" />
 	   			</a>
 	   		</div>
    		</li>
@@ -40,17 +40,17 @@
    		<li>
    			<div>
 	   			<a href="#">
-	   				<img :src="list_three_aone" />
+	   				<img v-lazy="list_three_aone" />
 	   			</a>
 	   		</div>
 	   		<div>
 	   			<a href="#" v-for="item in list_three_atwo">
-	   				<img :src="item.child[0].pic" />
+	   				<img v-lazy="item.child[0].pic" />
 	   			</a>
 	   		</div>	
 	   		<div>	
 	   			<a href="#" v-for="item in list_three_athree">
-	   				<img :src="item.child[0].pic" />
+	   				<img v-lazy="item.child[0].pic" />
 	   			</a>
 	   		</div>	
    		</li>
@@ -58,17 +58,17 @@
    		<li>
    			<div>
 	   			<a href="#">
-	   				<img :src="list_four_aone" />
+	   				<img v-lazy="list_four_aone" />
 	   			</a>
 	   		</div>	
 	   		<div>
 	   			<a href="#" v-for="item in list_four_atwo">
-	   				<img :src="item.child[0].pic" />
+	   				<img v-lazy="item.child[0].pic" />
 	   			</a>
 	   		</div>	
 	   		<div>
 	   			<a href="#" v-for="item in list_four_athree">
-	   				<img :src="item.child[0].pic" />
+	   				<img v-lazy="item.child[0].pic" />
 	   			</a>
 	   		</div>	
    		</li>
@@ -76,17 +76,17 @@
    		<li>
    			<div>
 	   			<a href="#">
-	   				<img :src="list_five_aone" />
+	   				<img v-lazy="list_five_aone" />
 	   			</a>
 	   		</div>	
 	   		<div>
 	   			<a href="#" v-for="item in list_five_atwo">
-	   				<img :src="item.child[0].pic" />
+	   				<img v-lazy="item.child[0].pic" />
 	   			</a>
 	   		</div>	
 	   		<div>
 	   			<a href="#" v-for="item in list_five_athree">
-	   				<img :src="item.child[0].pic" />
+	   				<img v-lazy="item.child[0].pic" />
 	   			</a>
 	   		</div>
    		</li>
@@ -94,17 +94,17 @@
    		<li>
    			<div>
 	   			<a href="#">
-	   				<img :src="list_six_aone" />
+	   				<img v-lazy="list_six_aone" />
 	   			</a>
 	   		</div>	
 	   		<div>
 	   			<a href="#" v-for="item in list_six_atwo">
-	   				<img  :src="item.child[0].pic" />
+	   				<img  v-lazy="item.child[0].pic" />
 	   			</a>
 	   		</div>	
 	   		<div>
 	   			<a href="#" v-for="item in list_six_athree">
-	   				<img :src="item.child[0].pic" />
+	   				<img v-lazy="item.child[0].pic" />
 	   			</a>
 	   		</div>
    		</li>

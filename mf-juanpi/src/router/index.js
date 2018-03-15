@@ -6,22 +6,22 @@ import IndexFooter from '@/components/component/IndexFooter'
 import Brand from '@/components/index/brand'
 import Beauty from '@/components/index/beauty'
 import Login from '@/components/login/Login'
-import Choiceness from '@/components/index/choiceness'
+import Index from '@/components/index/index'
 
 Vue.use(Router)
 
 export default new Router({
 	mode:'history',
   routes: [
- 	{
-      path: '/Choiceness/:fid',
-      name: 'Choiceness',
-      component: Choiceness
+    {
+      path: '/hello',
+      name: 'HelloWorld',
+      component: HelloWorld
     },
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'index',
+      component: Index
     },
     {
       path: '/Register',
