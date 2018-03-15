@@ -6,10 +6,7 @@ import IndexFooter from '@/components/component/IndexFooter'
 import Brand from '@/components/index/brand'
 import Beauty from '@/components/index/beauty'
 import Login from '@/components/login/Login'
-<<<<<<< HEAD
 import Index from '@/components/index/index'
-=======
->>>>>>> 8a02337dd509237af8f49978f2d10bbefbd95f91
 
 Vue.use(Router)
 
