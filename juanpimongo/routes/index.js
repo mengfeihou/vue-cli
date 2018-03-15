@@ -8,6 +8,26 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+//登录----------------
+router.post('/myapi/login',function(req,res){
+	var username = req.body.username;
+	var psw = md5(req.body.psw);
+	var result = {
+		status: 1,
+		message: "登录成功"
+	}
+	UserModel.find({username:username,psw:psw},function(err,docs){
+		if(!err && docs.length==1){
+			res.send(result);
+		}else{
+			result.status = -111;
+			result.message = "用户名或密码错误";
+			res.send(result);
+		}
+	})
+})
+
+//注册----------------
 router.post('/myapi/register',function(req,res){
 	var username = req.body.username;
 	var psw = md5(req.body.psw);
@@ -42,7 +62,5 @@ router.post('/myapi/register',function(req,res){
 			}
 		});
 	});
-	
-	
 });
 module.exports = router;

@@ -11,10 +11,16 @@ export default {
 }
 </script>
 
+<<<<<<< HEAD
 <style scoped="scoped">
 	#app{
 		height:100%;
 		/*overflow: hidden;*/
+=======
+<style>
+	#app{
+		height: 100%;
+>>>>>>> 8a02337dd509237af8f49978f2d10bbefbd95f91
 	}
 /*#app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
