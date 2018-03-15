@@ -3,7 +3,7 @@
   	<div class="goods" v-for="item in recommend_list">
   		<a :href="item.goods_jump_url">
   			<div class="imgs">
-  				<img :src="item.pic_url" />
+  				<img v-lazy="item.pic_url" />
   			</div>
   			<div class="text">
   				<i v-if="item.cprice!=''">¥{{item.cprice}}</i>
