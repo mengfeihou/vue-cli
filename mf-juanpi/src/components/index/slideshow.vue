@@ -29,7 +29,7 @@ export default {
   	var mySwiper = new Swiper('.swiper-container', {
   		loop : true,
 		  autoplay: {
-		    delay: 1000,//1秒切换一次
+		    delay: 3000,//1秒切换一次
 		  }
 		});
   }

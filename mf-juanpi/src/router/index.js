@@ -7,7 +7,7 @@ import Brand from '@/components/index/brand'
 import Beauty from '@/components/index/beauty'
 import Login from '@/components/login/Login'
 import Index from '@/components/index/index'
-import Detail from '@/components/index/detail'
+import Detail from '@/components/detail'
 
 Vue.use(Router)
 
