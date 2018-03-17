@@ -7,6 +7,7 @@ import Brand from '@/components/index/brand'
 import Beauty from '@/components/index/beauty'
 import Login from '@/components/login/Login'
 import Index from '@/components/index/index'
+import Detail from '@/components/index/detail'
 
 Vue.use(Router)
 
@@ -47,6 +48,11 @@ export default new Router({
       path: '/beauty',
       name: 'Beauty',
       component: Beauty
-    }
+    },
+    {
+      path: '/detail/:gid',
+      name: 'Detail',
+      component: Detail
+    },
   ]
 })

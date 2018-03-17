@@ -9,7 +9,7 @@
   	</div>
   	<div id="content">
   	<div class="goods" v-for="item in arr_list">
-  		<a :href="item.goods_jump_url">
+		 	<router-link :to="{name: 'Detail', params:{gid: item.goods_id}}"> 
   			<div class="imgs">
   				<img v-lazy="item.pic_url" />
   			</div>
@@ -17,7 +17,7 @@
   				<i v-if="item.cprice!=''">¥{{item.cprice}}</i>
 					<span>{{item.title}}</span>
   			</div>
-  		</a>
+  		</router-link>
   	</div>
  	 </div>
   </div>
@@ -69,13 +69,14 @@ export default {
   mounted(){
   	axios.get("/api/getGoods?page=1&zy_ids=p8_c4_l4_1456_1220_1186_1406_1184_1217_1371_5_128_106_51_18_1391&app_name=zhe&catname=xbsytj&flag=xbsytj")
   	.then((res)=>{
+  		console.log(res);
   		this.arr.xbsytj=res.data.data.goods;
   		this.arr_list=this.arr.xbsytj;
   	}),
   	axios.get("/api/getIndexFirstPaintInfo?cid=&zy_ids=p8_c4_l4_1456_1220_1186_1406_1184_1217_1371_5_128_106_51_18_1391&app_name=zhe&app_version=&platform=&catname=newest_zhe")
   	.then((res)=>{
 			this.nav_list=res.data.menuInfo.app_menu.menulist[0].subtab[0].child_tab;
-			console.log(res.data.menuInfo.app_menu.menulist[0].subtab[0]);
+//			console.log(res.data.menuInfo.app_menu.menulist[0].subtab[0]);
 				
   	})
   },
@@ -86,7 +87,6 @@ export default {
 <style scoped>
 	#main{
 		height: 100%;
-		overflow: hidden;
 	}
 	#nav{
 		height: .44rem;

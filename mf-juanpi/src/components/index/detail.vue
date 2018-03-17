@@ -10,10 +10,16 @@ export default {
   name: 'Detail',
   data () {
     return {
+    	gid:""
     }
   },
   mounted(){
-  	
+  	this.gid=this.$route.params.gid;
+  	console.log(this.gid)
+	axios.get("/api/getMemberAboutInfo?goods_id="+this.gid+"&is_pt_goods=0&req_coupons_id="+this.gid)
+	.then((res)=>{
+		console.log(res)
+	})
   },
 }
 </script>

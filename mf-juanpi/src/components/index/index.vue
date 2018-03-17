@@ -4,8 +4,8 @@
   		<search></search>
 	  	<slideshow></slideshow>
 	  	<Nav></Nav>
-	  	<beauty></beauty>
 	  	<brand></brand>
+	  	<beauty></beauty>
 	  	<choiceness></choiceness>
   	</div>
   	<div class="foot">

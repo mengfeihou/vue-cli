@@ -8,8 +8,10 @@
 				<a :href="item.child[0].url"><img :src="item.child[0].pic" /></a>
 			</li>
 		</ul>
-		<div>
-			<a :href='banner.url'><img :src="banner.pic" /></a>
+		<div id="foot">
+			<div v-for="item in banner">
+				<a :href='item.child[0].url'><img :src="item.child[0].pic"/></a>
+			</div>
 		</div>
 	</div>
 </template>
@@ -31,7 +33,8 @@ export default {
   	.then((res)=>{
 		this.navList1=res.data.adsInfo.block[0].multi_block[0].data;
 		this.navList2=res.data.adsInfo.block[0].multi_block[1].data;
-  		this.banner=res.data.adsInfo.block[0].multi_block[2].data[0].child[0];
+  		this.banner=res.data.adsInfo.block[0].multi_block[2].data;
+  		console.log(this.banner)
   	})
   },
 }
@@ -44,13 +47,16 @@ export default {
 		background: white;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: center;
 	}
 	ul img{
 		width: .93rem;
 		height: .83rem;
 	}
-	#main div img{
+	#foot{
+		display: flex;
+	}
+	#foot img{
 		width:100%;
 	}
 </style>
