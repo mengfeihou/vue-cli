@@ -17,11 +17,11 @@
 	   				<img :src="item.child[0].pic" />
    				</a>
    			</li>
-   			<li v-for="item in list3">
+   		<!--	<li v-for="item in list3">
    				<a href="#">
 	   				<img :src="item.child[0].pic" />
    				</a>
-   			</li>
+   			</li>-->
    		</ul>
    	</div>
   </div>
