@@ -2,7 +2,7 @@
   <div class="hello">
    	<!--<Search></Search>
   	<Beauty></Beauty>-->
-  	<!--<Choiceness></Choiceness>-->
+  	<Choiceness></Choiceness>
   	
   	
   </div>

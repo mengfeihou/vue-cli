@@ -2,7 +2,7 @@
   <div id="main">
   	<div id="nav">
 	  	<ul>
-	  		<li v-for="item in nav_list" :id="item.item" @click="abc($event)">
+	  		<li v-for="item in nav_list" :id="item.item" @click="change($event)">
 	  			 	{{item.title}}
 	  		</li>
 	  	</ul>
@@ -51,7 +51,7 @@ export default {
   	
   },
   methods:{
-  	abc:function(event){
+  	change:function(event){
   		console.log(event.target.id);
   		var item=event.target.id;
   		if(this.arr[item]==""){
@@ -109,6 +109,7 @@ export default {
 		/*border-bottom: 4px solid #ff464e;*/
 	}
 	#content{
+		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		font-size: .07rem;
@@ -116,12 +117,13 @@ export default {
 	}
 	#content .goods{
 		background: white;
+		width: 50%;
 	}
 	#content a{
 		color: #3b3b3b;
+		width: 100%;
 	}
 	#content a .text{
-		width:1.865rem;
 		padding: 0 .08rem;
 	}
 	#content a i{
@@ -133,6 +135,6 @@ export default {
 		margin-bottom: .12rem;
 	}
 	.imgs img{
-		width:1.865rem;
+		width: 100%;
 	}
 </style>

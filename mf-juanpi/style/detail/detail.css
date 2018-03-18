@@ -1,0 +1,111 @@
+@charset "UTF-8";
+#main {
+  font-size: .12rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*---------------閫夋嫨寮圭獥----------------*/ }
+  #main #top {
+    overflow: auto; }
+    #main #top #bigshow img {
+      width: 100%; }
+    #main #top #price_name div b {
+      font-size: .23rem;
+      color: #ff464e; }
+      #main #top #price_name div b i {
+        font-size: .18rem; }
+  #main #foot {
+    height: .48rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    font-size: .12rem;
+    color: #333333; }
+    #main #foot a {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      color: #6b6b6b; }
+      #main #foot a img {
+        margin: auto;
+        width: .24rem; }
+    #main #foot i {
+      color: #333333;
+      font-size: .14rem;
+      width: .93rem;
+      text-align: center;
+      line-height: .48rem; }
+    #main #foot span {
+      color: white;
+      background: #ff464e;
+      font-size: .14rem;
+      line-height: .48rem;
+      width: 1.33rem;
+      text-align: center; }
+  #main #chooseWrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45); }
+    #main #chooseWrap #choose {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }
+      #main #chooseWrap #choose div {
+        background: white; }
+        #main #chooseWrap #choose div #close {
+          position: absolute;
+          right: 0;
+          font-size: .26rem;
+          line-height: .26rem;
+          height: .26rem;
+          width: .26rem;
+          text-align: center; }
+        #main #chooseWrap #choose div #text {
+          padding: 0 .14rem; }
+          #main #chooseWrap #choose div #text #count {
+            display: flex;
+            height: .30rem;
+            line-height: .30rem;
+            justify-content: space-between;
+            font-size: .17rem;
+            margin: .3rem 0; }
+            #main #chooseWrap #choose div #text #count #addcount {
+              display: flex; }
+              #main #chooseWrap #choose div #text #count #addcount span {
+                width: .3rem;
+                background: #f7f7f7;
+                text-align: center; }
+              #main #chooseWrap #choose div #text #count #addcount i {
+                width: .45rem;
+                text-align: center; }
+      #main #chooseWrap #choose button {
+        height: .48rem;
+        line-height: .45rem;
+        color: white;
+        text-align: center;
+        background: #ff464e;
+        font-size: .18rem;
+        border: 0 none; }
+
+.flew-enter {
+  top: 100%; }
+
+.flew-enter-to {
+  top: 0;
+  transition: all 0.8s; }
+
+.flew-leave {
+  top: 0; }
+
+.flew-leave-to {
+  top: 100%;
+  transition: all 0.8s; }
+
+/*# sourceMappingURL=detail.css.map */

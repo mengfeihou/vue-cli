@@ -6,9 +6,9 @@
 					<li><img :src="bigPic"/></li>
 				</ul>
 			</div>
-			<div>
+			<div id="price_name">
 				<div>
-					<b>¥{{fprice}}</b>
+					<b><i>¥</i>{{fprice}}</b>
 				</div>
 			</div>
 		</div>
@@ -22,7 +22,27 @@
 				<b>购物车</b>
 			</a>
 			<i>立即购买</i>
-			<span @click="add">加入购物车</span>
+			<span @click="pupChoose">加入购物车</span>
+		</div>
+		<div v-show="popup" id="chooseWrap">
+			<transition name="flew">
+			<div v-show="popup" id="choose">
+				<div>
+					<div id="close" @click="pupChoose">×</div>
+					<div id="text">
+						<div id="count">
+							<div>购买数量</div>
+							<div id="addcount">
+								<span @click="count--">-</span>
+								<i>{{count<1?1:count}}</i>
+								<span @click="count++">+</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button>确定</button>
+			</div>
+			</transition>
 		</div>
 	</div>
 </template>
@@ -37,11 +57,14 @@ export default {
     	gid:"",
     	bigPic:"",
     	fprice:"",
+    	popup:false,
+    	count:"1",
     }
   },
   methods:{
-  	add(){
-  		alert(5)
+  	pupChoose(){
+//		this.$store.dispatch("addGoodsA",this.gid);
+		this.popup=!this.popup;
   	}
   },
   mounted(){
@@ -58,54 +81,5 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-	#main{
-		font-size: .12rem;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-	#top{
-		overflow: auto;
-	}
-	#bigshow img{
-		width: 100%;
-	}
-	#foot{
-		height: .48rem;
-		background: white;
-		display: flex;
-		align-items: center;
-		font-size: .12rem;
-		color: #333333;
-	}
-	#foot a{
-		flex:1;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		height: 100%;
-		color: #6b6b6b;
-	}
-	#foot a img{
-		margin: auto;
-		width:.24rem;
-	}
-	#foot i{
-		color: #333333;
-		font-size: .14rem;
-		width:.93rem;
-		text-align: center;
-		line-height: .48rem;
-	}
-	#foot span{
-		color: white;
-		background: #ff464e;
-		font-size: .14rem;
-		line-height: .48rem;
-		width: 1.33rem;
-		text-align: center;
-		
-	}
+<style scoped src="../../style/detail/detail.css">
 </style>

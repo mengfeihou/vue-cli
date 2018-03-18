@@ -1,0 +1,133 @@
+#main{
+    font-size: .12rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    #top{
+        overflow: auto;
+        #bigshow img{
+            width: 100%;
+        }
+        #price_name{
+            div{
+                b{
+                    font-size: .23rem;
+                    color: #ff464e;
+                    i{
+                        font-size: .18rem;
+                    }
+                }
+            }
+        }
+    }
+    #foot{
+        height: .48rem;
+        background: white;
+        display: flex;
+        align-items: center;
+        font-size: .12rem;
+        color: #333333;
+        a{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            color: #6b6b6b;
+            img{
+                margin: auto;
+                width:.24rem;
+            }
+        }
+        i{
+            color: #333333;
+            font-size: .14rem;
+            width:.93rem;
+            text-align: center;
+            line-height: .48rem;
+        }
+        span{
+            color: white;
+            background: #ff464e;
+            font-size: .14rem;
+            line-height: .48rem;
+            width: 1.33rem;
+            text-align: center;
+        }
+    }
+    /*---------------选择弹窗----------------*/
+   #chooseWrap{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.45);
+        #choose{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            div{
+                background: white;
+                #close{
+                    position: absolute;
+                    right: 0;
+                    font-size: .26rem;
+                    line-height: .26rem;
+                    height: .26rem;
+                    width:.26rem;
+                    text-align: center;
+                }
+                #text{
+                    padding: 0 .14rem;
+                    #count{
+                        display: flex;
+                        height: .30rem;
+                        line-height: .30rem;
+                        justify-content: space-between;
+                        font-size: .17rem;
+                        margin: .3rem 0;
+                        #addcount{
+                            display: flex;
+                            span{
+                                width: .3rem;
+                                background: #f7f7f7;
+                                text-align: center;
+                            }
+                            i{
+                                width: .45rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+            button{
+                height: .48rem;
+                line-height: .45rem;
+                color: white;
+                text-align: center;
+                background: #ff464e;
+                font-size: .18rem;
+                border: 0 none;
+            }
+        }
+    }
+}
+.flew-enter{
+    top: 100%;
+}
+.flew-enter-to{
+    top: 0;
+    transition: all 0.8s;
+}
+.flew-leave{
+    top: 0;
+}
+.flew-leave-to{
+    top: 100%;
+    transition: all 0.8s;
+}
+
