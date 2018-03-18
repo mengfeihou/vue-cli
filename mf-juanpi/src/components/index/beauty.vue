@@ -3,8 +3,8 @@
    	<ul class="beauty">
    		<li v-for="item in lists">
 		   		<div v-for="(itema,index) in item">
-		   			<a href="#" v-for="itemb in itema.data">
-		   				<img  v-lazy="itemb.child[0].pic" />
+		   			<a href="#" v-for="item in itema.data">
+		   				<img  v-lazy="item.child[0].pic" />
 		   			</a>
 		  		</div>	
    		</li>
@@ -16,10 +16,11 @@
 	import axios from "axios"
 	
 export default {
-  name: 'HelloWorld',
+  name: 'Beauty',
   data () {
     return {
     	list : [],
+    	lis : [],
     	lists :[],
     	message:0,
     }
@@ -35,9 +36,10 @@ export default {
       		a.push(this.list[j]);
       		console.log(j);
       	}
-      		this.lists[i] = a;
+      		this.lis[i] = a;
       		console.log(this.lists);
       }
+      this.lists = this.lis;
     })
   }
 }
