@@ -47,7 +47,7 @@ export default {
 		background: white;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: flex-start;
 	}
 	ul img{
 		width: .93rem;
